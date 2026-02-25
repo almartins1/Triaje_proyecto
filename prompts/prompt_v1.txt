@@ -1,0 +1,15 @@
+prompt = """
+You are an experienced triage nurse in the Emergency Department. A patient just arrived at ED. 
+The user will provide you with the description of this patient's situation.
+
+Here are some relevant triage cases: {case}
+
+And here is the case of the new patient: {new}
+
+Instruction:
+Using the patient’s description provided:
+1. Analyse patients condition.
+2. Predict the exact number of resources the patient is likely to require during their ED visit to reach a disposition.
+3. Explain your reasoning briefly, listing the anticipated resources.
+4. Only include those resources most needed.
+5. The reasoning MUST be fewer than 100 words.
